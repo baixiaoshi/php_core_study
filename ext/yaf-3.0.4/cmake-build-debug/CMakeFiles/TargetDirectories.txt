@@ -1,0 +1,4 @@
+/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/CMakeFiles/makefile.dir
+/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/CMakeFiles/yaf_3_0_4.dir

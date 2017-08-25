@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/yaf_3_0_4.dir/configs/yaf_config_ini.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/configs/yaf_config_simple.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/requests/yaf_request_http.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/requests/yaf_request_simple.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/responses/yaf_response_cli.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/responses/yaf_response_http.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/routes/yaf_route_interface.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/routes/yaf_route_map.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/routes/yaf_route_regex.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/routes/yaf_route_rewrite.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/routes/yaf_route_simple.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/routes/yaf_route_static.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/routes/yaf_route_supervar.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/views/yaf_view_interface.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/views/yaf_view_simple.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_action.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_application.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_bootstrap.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_config.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_controller.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_dispatcher.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_exception.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_loader.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_plugin.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_registry.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_request.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_response.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_router.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_session.c.o"
+  "CMakeFiles/yaf_3_0_4.dir/yaf_view.c.o"
+  "yaf_3_0_4.pdb"
+  "yaf_3_0_4"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/yaf_3_0_4.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,4 @@
+/usr/local/src/php-7.1.4/ext/lion/cmake-build-debug/CMakeFiles/makefile.dir
+/usr/local/src/php-7.1.4/ext/lion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/usr/local/src/php-7.1.4/ext/lion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/usr/local/src/php-7.1.4/ext/lion/cmake-build-debug/CMakeFiles/lion.dir

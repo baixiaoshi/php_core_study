@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "php.h": "c",
+        "_string.h": "c",
+        "zend_api.h": "c",
+        "zend_string.h": "c",
+        "message.h": "c",
+        "zend.h": "c",
+        "zend_ast.h": "c",
+        "_fsid_t.h": "c",
+        "port.h": "c",
+        "zend_stream.h": "c",
+        "zend_alloc.h": "c",
+        "zend_gc.h": "c",
+        "zend_compile.h": "c",
+        "zend_hash.h": "c",
+        "zend_operators.h": "c"
+    }
+}

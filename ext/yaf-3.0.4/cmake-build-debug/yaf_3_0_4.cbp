@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="yaf_3_0_4"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="makefile">
+				<Option working_dir="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 makefile"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaf_3_0_4">
+				<Option output="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/yaf_3_0_4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/src/php-7.1.4/main"/>
+					<Add directory="/usr/local/src/php-7.1.4/Zend"/>
+					<Add directory="/usr/local/src/php-7.1.4/sapi"/>
+					<Add directory="/usr/local/src/php-7.1.4/pear"/>
+					<Add directory="/usr/local/src/php-7.1.4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 yaf_3_0_4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaf_3_0_4/fast">
+				<Option output="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/yaf_3_0_4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/src/php-7.1.4/main"/>
+					<Add directory="/usr/local/src/php-7.1.4/Zend"/>
+					<Add directory="/usr/local/src/php-7.1.4/sapi"/>
+					<Add directory="/usr/local/src/php-7.1.4/pear"/>
+					<Add directory="/usr/local/src/php-7.1.4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 yaf_3_0_4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/usr/local/src/php-7.1.4/ext/yaf-3.0.4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/configs/yaf_config_ini.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/configs/yaf_config_ini.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/configs/yaf_config_simple.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/configs/yaf_config_simple.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/php_yaf.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/requests/yaf_request_http.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/requests/yaf_request_http.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/requests/yaf_request_simple.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/requests/yaf_request_simple.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/responses/yaf_response_cli.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/responses/yaf_response_cli.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/responses/yaf_response_http.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/responses/yaf_response_http.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_interface.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_interface.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_map.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_map.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_regex.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_regex.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_rewrite.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_rewrite.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_simple.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_simple.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_static.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_static.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_supervar.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/routes/yaf_route_supervar.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/views/yaf_view_interface.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/views/yaf_view_interface.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/views/yaf_view_simple.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/views/yaf_view_simple.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_action.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_action.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_application.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_application.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_bootstrap.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_bootstrap.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_config.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_config.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_controller.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_controller.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_dispatcher.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_dispatcher.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_exception.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_exception.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_loader.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_loader.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_logo.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_namespace.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_plugin.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_plugin.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_registry.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_registry.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_request.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_request.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_response.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_response.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_router.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_router.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_session.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_session.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_view.c">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/yaf_view.h">
+			<Option target="yaf_3_0_4"/>
+		</Unit>
+		<Unit filename="/usr/local/src/php-7.1.4/ext/yaf-3.0.4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
