@@ -70,10 +70,10 @@ ZEND_BEGIN_MODULE_GLOBALS(lion)
 
 ZEND_END_MODULE_GLOBALS(lion)
 
-
 #define LION_STARTUP_FUNCTION(module) ZEND_MINIT_FUNCTION(lion_##module)
+
 #define LION_STARTUP(module) ZEND_MODULE_STARTUP_N(lion_##module)(INIT_FUNC_ARGS_PASSTHRU)
-#endif	/* PHP_LION_H */
+#endif
 
 
 /*

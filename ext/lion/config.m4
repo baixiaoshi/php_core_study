@@ -59,5 +59,5 @@ if test "$PHP_LION" != "no"; then
   dnl
   dnl PHP_SUBST(LION_SHARED_LIBADD)
 
-  PHP_NEW_EXTENSION(lion, lion.c lion_demo.c, $ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
+  PHP_NEW_EXTENSION(lion, lion.c lion_demo.c lion_book_interface.c lion_book_math.c, $ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
 fi
