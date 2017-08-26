@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "yaf_plugin.h": "c",
+        "php_yaf.h": "c"
     }
 }

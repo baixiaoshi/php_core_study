@@ -39,6 +39,10 @@ LION_STARTUP_FUNCTION(book_math) {
     //定义父类，最后使用zend_class_implements函数声明它实现的接口
     INIT_CLASS_ENTRY(ce, "lion_book_math", lion_book_math_methods);
     lion_book_math_ce = zend_register_internal_class(&ce TSRMLS_CC);
+
+    //php_printf("ROPERTY_PUBLIC_NAME=%s\n", ROPERTY_PUBLIC_NAME);
+    zend_declare_property_null(lion_book_math_ce, ZEND_STRL(ROPERTY_PUBLIC_NAME), ZEND_ACC_PUBLIC);
+    
     zend_class_implements(lion_book_math_ce TSRMLS_CC, 1, lion_book_interface_ce);
 
     return SUCCESS;
