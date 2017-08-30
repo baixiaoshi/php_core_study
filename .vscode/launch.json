@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "php_core",
+            "name": "php_core_haha",
             "type": "cppdbg",
             "request": "launch",
             "program": "/usr/local/phpdebug/bin/php",

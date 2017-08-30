@@ -14,7 +14,9 @@ zend_class_entry *lion_demo_ce;
 //这里其实是拼凑一个完整的二维数组来传递多个数组,没错，这里其实就是想初始化数组，真的太他妈的坑爹了啊，
 //连这样都可以完成
 
-ZEND_BEGIN_ARG_INFO_EX(lion_demo_void_arginfo, 0, 0, 0)
+ZEND_BEGIN_ARG_INFO_EX(lion_demo_void_arginfo, 0, 0, 2)
+    ZEND_ARG_INFO(0, name)
+    ZEND_ARG_INFO(0, age)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(lion_demo_construct_arginfo, 0, 0, 0)
@@ -29,6 +31,33 @@ ZEND_END_ARG_INFO()
 
 PHP_METHOD(lion_demo, __construct) {
     php_printf("this is __construct");
+
+    //读取属性呢
+    zval *name;
+    zval *age;
+
+    zend_class_entry *ce;
+    ce = Z_OBJCE_P(getThis());
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "zz", &name, &age) == FAILURE) {
+        php_error_docref(NULL, E_ERROR, "params is error");
+        return ;
+    }
+
+    //设置这些值到构造函数
+    zend_update_property(ce, getThis(), "name", sizeof("name"), name);
+    zend_update_property(ce, getThis(), "age", sizeof("age"), age);
+
+
+
+    name = zend_read_property(ce, getThis(), "name", sizeof("name"), 1, NULL);
+    
+    php_printf("name=%s\n", Z_STRVAL_P(name));
+
+    age = zend_read_property(ce, getThis(), "age", sizeof("age"), 1, NULL);
+
+    php_printf("age=%d\n", Z_LVAL_P(age));
+    
 }
 
 PHP_METHOD(lion_demo, hello) {

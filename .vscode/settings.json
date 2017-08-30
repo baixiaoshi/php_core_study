@@ -2,6 +2,15 @@
     "files.associations": {
         "typeinfo": "cpp",
         "yaf_plugin.h": "c",
-        "php_yaf.h": "c"
+        "php_yaf.h": "c",
+        "__locale": "c",
+        "algorithm": "cpp",
+        "atomic": "cpp",
+        "functional": "cpp",
+        "locale": "cpp",
+        "memory": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp"
     }
 }
