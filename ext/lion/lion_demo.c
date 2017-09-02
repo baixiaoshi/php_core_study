@@ -87,11 +87,19 @@ PHP_METHOD(lion_demo, testforeach) {
     zend_ulong num_key;
     zend_string *str_key;
     zval *zv;
+    zval tmp;
     if (zend_parse_parameters_throw(ZEND_NUM_ARGS(), "a", &arr) == FAILURE) {
         php_error_docref(NULL, E_ERROR, " params faile\n");
 		return;
     }
     
+    uint32_t count = zend_hash_num_elements(Z_ARRVAL_P(arr));
+
+    php_printf("count=%d\n", count);
+
+    array_init(return_value);
+
+    ZVAL_STRING(&tmp, "hello world");
 
     ZEND_HASH_FOREACH_KEY_VAL(Z_ARRVAL_P(arr), num_key, str_key, zv) {
         if (Z_TYPE_P(zv) == IS_STRING) {
@@ -99,6 +107,9 @@ PHP_METHOD(lion_demo, testforeach) {
         } else {
             php_printf("num_key=%lu, str_key=%s,zv=%d\n", num_key, ZSTR_VAL(str_key), Z_LVAL_P(zv));            
         }
+        
+        zend_hash_next_index_insert_new(Z_ARRVAL_P(return_value), zv);
+
     } ZEND_HASH_FOREACH_END();
 
 }
