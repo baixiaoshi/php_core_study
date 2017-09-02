@@ -1,0 +1,14 @@
+lion.lo: /usr/local/src/php-7.1.4/ext/lion/lion.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/usr/local/src/php-7.1.4/ext/lion $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /usr/local/src/php-7.1.4/ext/lion/lion.c -o lion.lo 
+lion_demo.lo: /usr/local/src/php-7.1.4/ext/lion/lion_demo.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/usr/local/src/php-7.1.4/ext/lion $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /usr/local/src/php-7.1.4/ext/lion/lion_demo.c -o lion_demo.lo 
+lion_book_interface.lo: /usr/local/src/php-7.1.4/ext/lion/lion_book_interface.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/usr/local/src/php-7.1.4/ext/lion $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /usr/local/src/php-7.1.4/ext/lion/lion_book_interface.c -o lion_book_interface.lo 
+lion_book_math.lo: /usr/local/src/php-7.1.4/ext/lion/lion_book_math.c
+	$(LIBTOOL) --mode=compile $(CC) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I. -I/usr/local/src/php-7.1.4/ext/lion $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /usr/local/src/php-7.1.4/ext/lion/lion_book_math.c -o lion_book_math.lo 
+$(phplibdir)/lion.la: ./lion.la
+	$(LIBTOOL) --mode=install cp ./lion.la $(phplibdir)
+
+./lion.la: $(shared_objects_lion) $(LION_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_lion) $(LION_SHARED_LIBADD)
+

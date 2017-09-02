@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /usr/local/src/php-7.1.4/ext/lion/cmake-build-debug
 include CMakeFiles/makefile.dir/progress.make
 
 CMakeFiles/makefile:
-	cd /usr/local/src/php-7.1.4/ext/lion && sudo /usr/local/phpdebug/bin/phpize && ./configure --with-php-config=/usr/local/phpdebug/bin/php-config && make
+	cd /usr/local/src/php-7.1.4/ext/lion && sudo /usr/local/phpdebug/bin/phpize && sudo ./configure --with-php-config=/usr/local/phpdebug/bin/php-config && sudo make
 
 makefile: CMakeFiles/makefile
 makefile: CMakeFiles/makefile.dir/build.make
