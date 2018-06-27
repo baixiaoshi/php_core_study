@@ -1,0 +1,15 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "php_ext_task",
+            "type": "shell",
+            "command": "cd /usr/local/src/php-7.1.4/ext/lion && sudo make clean && sudo /usr/local/phpdebug/bin/phpize && sudo ./configure --with-php-config=/usr/local/phpdebug/bin/php-config &&sudo  make",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

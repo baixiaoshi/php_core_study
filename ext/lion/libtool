@@ -44,7 +44,7 @@ available_tags=""
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host MacBook-Pro.local:
+# Libtool was configured on host 192.168.0.105:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"

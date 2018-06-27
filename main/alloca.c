@@ -135,6 +135,15 @@ find_stack_direction ()
 #define	ALIGN_SIZE	sizeof(double)
 #endif
 
+typedef union hdr {
+  char align[ALIGN_SIZE];
+  struct {
+    union hdr *next;
+    char *deep;
+  } h;
+} header;
+
+
 typedef union hdr
 {
   char align[ALIGN_SIZE];	/* To force sizeof(header).  */

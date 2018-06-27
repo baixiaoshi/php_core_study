@@ -38,6 +38,20 @@ static int php_json_escape_string(
 		smart_str *buf,	char *s, size_t len,
 		int options, php_json_encoder *encoder);
 
+
+static int php_json_determine_array_type(zval *val) {
+	int  i;
+	HashTable *myht = Z_ARRVAL_P(val);
+	i = myht ? zend_hash_num_elements(myht) : 0;
+	if (i >0) {
+		zend_string *key;
+		zend_ulong index, idx;
+		if (HT_IS_PACKED(myht) && HT_IS_WITHOUT_HOLES(myht)) {
+			return PHP_JSON_OUTPUT_ARRAY;
+		}
+	}
+}
+
 static int php_json_determine_array_type(zval *val) /* {{{ */
 {
 	int i;

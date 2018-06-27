@@ -34,6 +34,11 @@ ZEND_BEGIN_ARG_INFO_EX(lion_demo_testforeach_arginfo, 0, 0, 1)
     ZEND_ARG_INFO(0, arr)
 ZEND_END_ARG_INFO()
 
+ZEND_BEGIN_ARG_INFO_EX(lion_demo_test_parse_parameters_arginfo, 0, 0, 2)
+    ZEND_ARG_INFO(0, arr1)
+    ZEND_ARG_INFO(0, arr2)
+ZEND_END_ARG_INFO()
+
 PHP_METHOD(lion_demo, __construct) {
     php_printf("this is __construct");
 
@@ -81,6 +86,31 @@ PHP_METHOD(lion_demo, mydump) {
     RETURN_ARR(Z_ARR_P(arr1));
 }
 
+PHP_METHOD(lion_demo, test_parse_parameters) {
+    zval *my_arr1;
+    zval *my_arr2;
+
+    zend_ulong num_key;
+    zend_string *str_key;
+    zval *zv;
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "a*", &my_arr1, &my_arr2) == FAILURE) {
+        php_error_docref(NULL, E_ERROR, "params faile");
+        return ;
+    }
+
+    ZEND_HASH_FOREACH_KEY_VAL(Z_ARRVAL_P(my_arr1), num_key, str_key, zv) {
+        if (Z_TYPE_P(zv) == IS_STRING) {
+            php_printf("num_key=%lu, str_key=%s,zv=%s\n", num_key, ZSTR_VAL(str_key), Z_STRVAL_P(zv));
+        } else {
+            php_printf("num_key=%lu, str_key=%s,zv=%d\n", num_key, ZSTR_VAL(str_key), Z_LVAL_P(zv));            
+        }
+        
+        zend_hash_next_index_insert_new(Z_ARRVAL_P(return_value), zv);
+
+    } ZEND_HASH_FOREACH_END();
+
+}
 
 PHP_METHOD(lion_demo, testforeach) {
     zval *arr;
@@ -121,6 +151,7 @@ zend_function_entry lion_demo_methods[] = {
         PHP_ME(lion_demo, hello, lion_demo_hello_arginfo, ZEND_ACC_PUBLIC)
         PHP_ME(lion_demo, mydump, lion_demo_mydump_arginfo, ZEND_ACC_PUBLIC)
         PHP_ME(lion_demo, testforeach, lion_demo_testforeach_arginfo, ZEND_ACC_PUBLIC)
+        PHP_ME(lion_demo, test_parse_parameters, lion_demo_test_parse_parameters_arginfo, ZEND_ACC_PUBLIC)
         {NULL, NULL, NULL}
 };
 

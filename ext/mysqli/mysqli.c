@@ -86,6 +86,9 @@ static void free_prop_handler(zval *el) {
 	pefree(Z_PTR_P(el), 1);
 }
 
+static void free_prop_handler(zval *el) {
+	pefree(Z_PTR_P(el), 1);
+}
 /* Destructor for mysqli entries in free_links/used_links */
 void php_mysqli_dtor_p_elements(void *data)
 {
@@ -93,6 +96,10 @@ void php_mysqli_dtor_p_elements(void *data)
 	mysqli_close(mysql, MYSQLI_CLOSE_IMPLICIT);
 }
 
+void php_mysqli_dtor_p_elements(void *data) {
+	MYSQL *mysql = (MYSQL *) data;
+	mysqli_close(mysql, MYSQLI_CLOSE_IMPLICIT);
+}
 
 ZEND_RSRC_DTOR_FUNC(php_mysqli_dtor)
 {

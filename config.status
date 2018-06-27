@@ -1326,9 +1326,9 @@ D["HAVE_SIGACTION"]=" 1"
 D["ZEND_SIGNALS"]=" 1"
 D["HAVE_STDARG_H"]=" 1"
 D["HAVE_SIGPROCMASK"]=" 1"
-D["PHP_BUILD_DATE"]=" \"2017-06-25\""
-D["PHP_UNAME"]=" \"Darwin 192.168.0.106 16.1.0 Darwin Kernel Version 16.1.0: Wed Oct 19 20:31:56 PDT 2016; root:xnu-3789.21.4~4/RELEASE_X86_64 x86_6"\
-"4\""
+D["PHP_BUILD_DATE"]=" \"2017-09-02\""
+D["PHP_UNAME"]=" \"Darwin MacBook-Pro.local 16.1.0 Darwin Kernel Version 16.1.0: Wed Oct 19 20:31:56 PDT 2016; root:xnu-3789.21.4~4/RELEASE_X86_64 x"\
+"86_64\""
 D["PHP_OS"]=" \"Darwin\""
 D["HAVE_BUILD_DEFS_H"]=" 1"
   for (key in D) D_is_set[key] = 1

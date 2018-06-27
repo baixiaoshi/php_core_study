@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "php_core_haha",
             "type": "cppdbg",
@@ -12,6 +13,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "lldb"
+           // "preLaunchTask": "php_ext_task"
         }
     ]
 }
